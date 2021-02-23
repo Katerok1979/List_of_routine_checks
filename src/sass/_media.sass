@@ -1,0 +1,127 @@
+
+@media (max-width: 1200px)
+
+	.menu
+		&_item
+			padding-right: 50px
+		&_link
+			font-size: 14px
+
+	.promo
+		&_header
+			font-size: 30px
+		&_subheader
+			font-size: 26px
+
+@media (max-width: 991px)
+
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 12px
+
+	.promo
+		&_header
+			font-size: 27px
+		&_subheader
+			font-size: 24px
+
+@media (max-width: 767px)
+
+	.menu
+		&_item
+			padding-right: 8px
+		&_link
+			font-size: 11px
+
+	.info
+		&_phone
+			font-size: 20px
+
+	.promo
+		&_header
+			font-size: 20px
+		&_subheader
+			font-size: 18px
+		&_descr
+			margin-top: 35px
+
+@media (max-width: 575px)
+
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(238, 238, 255, 0.8)
+		transition: 0.6s all
+		&_active
+			left: 0
+		&_item
+			width: 100%
+			padding-right: 0
+			margin: 10px 0
+		&_link
+			font-size: 18px
+			color: #000
+
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 25px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #000
+			margin-bottom: 3px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+
+@media (max-width: 319px)
+
+	.info
+		padding-top: 27px
+		&_title
+			font-size: 16px
+		&_phone
+			font-size: 18px
+
+	.promo
+		&_header
+			font-size: 18px
+			padding-top: 155px
+		&_subheader
+			font-size: 14px
+		&_descr
+			font-size: 14px
+			margin-top: 24px
+						
+
+
+
+
+	
+
+
+	
+		
+	

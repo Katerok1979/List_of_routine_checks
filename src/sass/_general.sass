@@ -95,6 +95,7 @@ nav
 	border-radius: 4px
 
 .panel-heading
+	position: relative
 	background-color: $main-color
 	color: $text-color
 	border-color: transparent
@@ -125,21 +126,28 @@ input #search
 	border-radius: 5px
 .icon
 	position: absolute
-	top: -50%
-	margin-right: -17px
+	width: 32px
+	right: 10px
+	top: 0
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $text-color
 
 .btn-lg
 	position: absolute
-	
 	border: 1px solid #ced4da
 	background-color: #fff
 .panel-admin
 	min-height: 185px
 .btn-warning
+	
 	background-color: $main-color
 	border-color: $main-color
 .pull-right
 	float: right !important
+	padding: 10px
 .list-group
 	margin-bottom: 20px
 .list-group-item
@@ -151,7 +159,14 @@ input #search
 	text-align: center
 	margin-top: 30px
 .btn
-	padding: 0
+	padding: 10px
+	cursor: pointer
+	&:hover
+		color: #000
+		text-shadow: 0 0 0px black, 0 0 0px black
+		background-color: #d2d2f9
+		border: none
+		box-shadow: none
 .btn-group
 	font-size: 14px
 .btn-actions

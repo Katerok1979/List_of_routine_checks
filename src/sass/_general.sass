@@ -173,6 +173,7 @@ input #search
 	justify-content: center
 	margin: 30px 0
 	.btn-secondary 
+		width: 100px
 		background-color: $main-color
 		color: $text-color
 		margin-right: 20px
@@ -188,13 +189,24 @@ input #search
 .block-table
 	display: flex
 	justify-content: center
+	min-width: 320px
+    max-width: 100%
+    padding: 0 15px
+    box-sizing: border-box
 	.table
-		display: table
-		margin: 0 auto
-		.table-title
-			text-align: center
-			background-color: $main-color
-			color: $text-color
+		border-collapse: collapse
+		width: 100%
+		margin: 20px  0
+	.table td, .table th
+		font-size: 14px
+		padding: 10px
+		border: 1px solid $text-color
+	.table-title
+		text-align: center
+		background-color: $main-color
+		color: $text-color
+		.title 
+			vertical-align: middle	
 		
 		
 			

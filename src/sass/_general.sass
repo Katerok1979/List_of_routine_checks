@@ -157,32 +157,21 @@ input #search
 	font-weight: 700
 	text-align: center
 	margin-top: 30px
-.btn
-	padding: 10px
-	cursor: pointer
-	&:hover
-		color: #000
-		text-shadow: 0 0 0px black, 0 0 0px black
-		background-color: #d2d2f9
-		border: none
-		box-shadow: none
-.btn-group
-	font-size: 14px
-.btn-actions
+.block-btn
 	display: flex
-	justify-content: center
-	margin: 30px 0
-	.btn-secondary 
-		width: 100px
+	justify-content: space-around
+	flex-wrap: wrap
+	padding: 5px 0
+	.button-item
 		background-color: $main-color
+		border: 1px solid $text-color
+		border-radius: 6px
+		flex-basis: 15%
+		padding: 5px 0
+		font-size: 14px
 		color: $text-color
-		margin-right: 20px
-		padding: 10px
-		border: 1px solid #ced4da
-		border-radius: 6px !important
-		&:nth-child(6)
-			margin-right: 0
-	.btn-secondary:hover
+	
+	.button-item:hover
 		color: #000
 		text-shadow: 0 0 0px black, 0 0 0px black
 		background-color: #d2d2f9
@@ -195,6 +184,7 @@ input #search
     box-sizing: border-box
 	.table
 		border-collapse: collapse
+		border-spacing: 0
 		width: 100%
 		margin: 20px  0
 	.table td, .table th

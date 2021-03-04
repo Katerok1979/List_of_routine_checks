@@ -1,29 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Подключаеи шрифты -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем сетку Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    
+    <!-- Подключаем стили Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Подключаем иконочный шрифт -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <!-- Подключаем собственные стили -->
     <link rel="stylesheet" href="css/styles.min.css">
 
-    <title>Hello, world!</title>
+    <title>Плановые проверки</title>
   </head>
   <body>
+
+    <!-- Шапка сайта -->
     <header class="header">
         <nav>
+
+    <!-- Иконка для адаптивного меню -->
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="container">
+
+    <!-- Меню сайта, на этом сайте оно не обязательно. Просто пример как с ним работать -->
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Налоговая</a></li>
@@ -35,26 +49,37 @@
                 </ul>
             </div>
         </nav>
+    <!-- Конец меню -->
+
+    <!-- Подменю сайта. Здесь могут находиться иконки соц. сетей, телефоны, адреса -->
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12">
                         <div class="info">
                             <div class="info_title">Справочная информация</div>
-                            <a href="tel:+78635432222" class="info_phone">8(863)534-22-22</a>
+                            <a href="tel:88007007216" class="info_phone">8-800-700-72-16</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    <!-- Конец подменю -->
 
+    </header>
+    <!-- Конец шапки сайта -->
+
+    <!-- Главный экран сайта -->
     <section class="promo">
         <div class="promo_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+
+                    <!-- Заголовок сайта -->
                         <h1 class="promo_header">Планы проверок юридических лиц и индивидуальных предпринимателей на 2021 год.</h1>
+                        
+                    <!-- Описание сайта -->
                         <div class="promo_descr">
                             Планы проверок юридических лиц и индивидуальных предпринимателей на 2021 год.
                             • Доступ к документации открыт в любое время дня и ночи, без выходных и праздников • Большой ассортимент актуальных документов • Постоянно обновляемые разделы в соответствии с изменениями законодательства по пожарной безопасности • немедленная доставка электронных документов – это основные причины, по которым обращаются именно к нам.
@@ -64,87 +89,107 @@
             </div>
         </div>
     </section>
+    <!-- Конец главного экрана -->
+
+    <!-- Содержимое сайта (контент) -->
     <section class="wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-lg-3 col-lg-pull-9">
+
+                    <!-- Формы -->
                     <div class="block-forms">
-                        <div class="panel panel-info hidden-xs">
-                            <div class="panel-heading">
-                                <div class="sidebar-header">Поиск</div>
-                                
-                            </div>
-                            <div class="panel-body panel-search">
-                                <form role="search">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            
-                                            <input type="search" id="search" class="form-control input-lg" placeholder="Ваш запрос">
-                                            <span class="icon"><i class="fas fa-search"></i></span>
+                        <div class="panel panel-info">
+
+                    <!-- Форма для авторизации и регистрации пользователя -->
+                            <div class="block-admin">
+                                <div class="panel-heading">
+                                    <div class="sidebar-header">Вход</div>
+                                </div>
+                                <div class="panel-body panel-admin">
+                                    <form class="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Логин">
                                         </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control input-lg" placeholder="Пароль">
+                                        </div>
+                                        <button type="submit" class="btn btn-warning pull-right">вход</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        
+                            <div class="panel panel-info">
+
+                        <!-- Форма поиска нужной проверки -->
+                                <div class="block-search">
+                                    <div class="panel-heading">
+                                        <div class="sidebar-header">Поиск</div>  
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <div class="sidebar-header">Вход</div>
-                            </div>
-                            <div class="panel-body panel-admin">
-                                <form class="form">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control input-lg" placeholder="Логин">
+                                    <div class="panel-body panel-search">
+                                        <form role="search">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    
+                                                    <input type="search" id="search" class="form-control input-lg" placeholder="Ваш запрос">
+                                                    <span class="icon"><i class="fas fa-search"></i></span>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control input-lg" placeholder="Пароль">
+                                </div>
+                            </div>
+
+                            <div class="panel panel-info">
+
+                <!-- Форма для отображения организаций, где планируют провести проверки -->
+                                <div class="block-checks">
+                                    <div class="panel-heading"><div class="sidebar-header">Проверки</div></div>
+                                    <div class="panel-body panel-check">
+                                        <p>31.05.2021</p>
+                                        <p>ООО "Глобус"</p>
                                     </div>
-                                    <button type="submit" class="btn btn-warning pull-right">вход</button>
-                                </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading"><div class="sidebar-header">Проверки</div></div>
-                            <div class="panel-body panel-check">
-                                <p>31.05.2021</p>
-                                <p>ООО "Глобус"</p>
+
+                            <div class="panel panel-info">
+
+                        <!-- Форма список организаций -->
+                                <div class="block-organizations">
+                                    <div class="panel-heading">
+                                        <div class="sidebar-header">Организации</div>
+                                    </div>
+                                    <div class="panel-body panel-organization">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-warning">
+                                                <a href="show.html">ООО "Глобус"</a>
+                                            </li>
+                                            <li class="list-group-item list-group-warning">
+                                                <a href="show.html">ООО "КДМ"</a>
+                                            </li>
+                                            <li class="list-group-item list-group-warning">
+                                                <a href="show.html">ООО "Квантум электрик плюс-ЮГ"</a>
+                                            </li>
+                                            <li class="list-group-item list-group-warning">
+                                                <a href="show.html">ООО "Глория-Джинс"</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <div class="sidebar-header">Организации</div>
-                            </div>
-                            <div class="panel-body panel-organization">
-                                <ul class="list-group">
-                                    <li class="list-group-item list-group-warning">
-                                        <a href="show.html">ООО "Глщбус"</a>
-                                    </li>
-                                    <li class="list-group-item list-group-warning">
-                                        <a href="show.html">ООО "КДМ"</a>
-                                    </li>
-                                    <li class="list-group-item list-group-warning">
-                                        <a href="show.html">ООО "Квантум электрик плюс-ЮГ"</a>
-                                    </li>
-                                    <li class="list-group-item list-group-warning">
-                                        <a href="show.html">ООО "Глщрия-Джинс"</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div>   
                     </div>
                 </div>
+        <!-- Конец блоку форм -->
 
                 <div class="col-sm-12  col-lg-9 col-lg-push-3">
 
-                    <form role="search" class="form-xs">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
-                                <span class="icon"><i class="fas fa-search"></i></span>
-                            </div>
-                        </div>
-                    </form> 
+            <!-- Блок таблицы плановых проверок -->
                     <div class="check">
                         <h2 class="check-title">Перечень плановых проверок</h2>
+
+                    <!-- Группа кнопок для работы с данными таблицы -->
                         <div class="block-btn">
                             <button type="button" class="button-item btn-1">Удалить</button>
                             <button type="button" class="button-item btn-2">Редактировать</button>
@@ -153,7 +198,9 @@
                             <button type="button" class="button-item btn-5">Добавить</button>
                             <button type="button" class="button-item btn-6">Excel</button>
                         </div> 
-                        
+                    <!-- Конец группы кнопок    -->
+
+                    <!-- Таблица с данными из базы данных -->
                         <div class="block-table table-responsive-xs">
                             <table class="table table-hover table-bordered">
                                 <thead>
@@ -185,7 +232,7 @@
                                     </tr>
                                     <tr>
                                         <td data-label="№">3</td>
-                                        <td data-label="Проверяемый СМП">ООО "Квантум электрик плюс-ЮГ"</td>
+                                        <td data-label="Проверяемый СМП">ООО "Квантум электрик плюс-Юг"</td>
                                         <td data-label="Адрес СМП">Ростов-на-Дону, пер. Ростовский, д. 6</td>
                                         <td data-label="Контралирующий орган">Налоговая инспекция</td>
                                         <td data-label="Плановый период проверки">28.02.2021 - 02.03.2021</td>
@@ -194,12 +241,73 @@
                                 </tbody>
                             </table>
                         </div>
+                <!-- Конец таблицы -->
+
                     </div>
+        <!-- Конец блока с таблицей -->
+                    
+        <!-- Альтернативная таблица созданная на чистом Bootstrap -->
+                    <div class="block-table-2 table-responsive-md">
+                        <table class="table caption-top table-bordered">
+                            <caption>Альтернативная таблица созданная на чистом Bootstrap</caption>
+                            <thead>
+                            <tr class="table-title-2"> 
+                                <th class="title-2" scope="col">№</th>
+                                <th class="title-2" scope="col">Проверяемый СМП</th>
+                                <th class="title-2" scope="col">Адрес СМП</th>
+                                <th class="title-2" scope="col">Контралирующий орган</th>
+                                <th class="title-2" scope="col">Плановый период проверки</th>
+                                <th class="title-2" scope="col">Плановая длительность</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ООО "Квантум электрик плюс-Юг"</td>
+                                <td>Ростов-на-Дону, пер. Ростовский, д. 6</td>
+                                <td>Налоговая инспекция</td>
+                                <td>28.02.2021 - 02.03.2021</td>
+                                <td>3 дня</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
+
+
             </div>       
         </div>
     </section>
+<!-- Конец содержимого сайта (контента) -->
+    
+    
 
+
+<!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer-info">
+            <h3 class="footer-title">Справочная информация</h3>
+            <div class="footer-descr">Бесплатный звонок <span>8-800-700-72-16</span></div>
+        </div>
+    </footer>
+<!-- Конец подвала -->
 
     
     

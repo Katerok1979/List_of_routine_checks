@@ -1,17 +1,14 @@
 header
 	position: relative
 	height: 50px
-
 nav
 	position: fixed
 	width: 100%
 	height: 50px
 	background-color: $main-color
 	z-index: 5
-
 .hamburger
 	display: none
-
 .menu
 	display: flex
 	justify-content: space-between
@@ -31,7 +28,6 @@ nav
 		&:nth-child(7)
 			padding-right: 0
 			
-
 .subheader
 	position: absolute
 	top: 30px
@@ -39,7 +35,6 @@ nav
 	height: 84px
 	background-color: rgba(200, 200, 245, 0.6)
 	z-index: 1
-
 .info
 	text-align: center
 	padding-top: 24px 
@@ -54,14 +49,14 @@ nav
 
 .promo
 	position: relative
-	min-height: 700px
+	min-height: 600px
 	background: url('../img/promo_bg.jpg') center (center / cover) no-repeat
 	&_bg::before
 		background: rgba(0, 0, 0, 0.4)
 		content: ""
 		position: absolute
 		width: 100%
-		min-height: 700px
+		min-height: 600px
 	&_header
 		color: #fff
 		font-size: 40px
@@ -69,7 +64,7 @@ nav
 		text-transform: uppercase
 		margin: 0
 		text-align: center
-		padding-top: 180px
+		padding-top: 150px
 	&_descr
 		color: #fff
 		font-size: 18px
@@ -78,21 +73,18 @@ nav
 		margin-top: 40px
 
 .wrapper
+	max-width: 100%
 	min-height: 100%
-	.container
+	.container-fluid
 		width: 100%
 		margin: 0 auto
-		padding: 0
-
-.form-xs
-	display: none
-
+		.form-xs
+			display: none
 .panel
 	position: relative
 	border: none
-	margin: 35px 0 20px
+	margin: 30px 0
 	border-radius: 4px
-
 .panel-heading
 	position: relative
 	background-color: $main-color
@@ -133,7 +125,6 @@ input #search
 	align-items: center
 	justify-content: center
 	color: $text-color
-
 .btn-lg
 	position: absolute
 	border: 1px solid #ced4da
@@ -141,7 +132,6 @@ input #search
 .panel-admin
 	min-height: 185px
 .btn-warning
-	
 	background-color: $main-color
 	border-color: $main-color
 .pull-right
@@ -152,33 +142,36 @@ input #search
 .list-group-item
 	a
 		color: $text-color
-.check-title 
-	font-size: 30px
-	font-weight: 700
-	text-align: center
-	margin-top: 30px
+
+.check
+	.check-title 
+		font-size: 30px
+		font-weight: 700
+		text-align: center
+		margin: 30px 0
 .block-btn
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
-	padding: 5px 0
+	padding: 10px 0
 	.button-item
 		background-color: $main-color
+		max-width: 140px
+		min-width: 120px
 		border: 1px solid $text-color
 		border-radius: 6px
 		flex-basis: 15%
-		padding: 5px 0
-		font-size: 14px
+		padding: 10px 0
+		font-size: 16px
 		color: $text-color
-	
 	.button-item:hover
 		color: #000
 		text-shadow: 0 0 0px black, 0 0 0px black
 		background-color: #d2d2f9
+
 .block-table
 	display: flex
 	justify-content: center
-	min-width: 320px
     max-width: 100%
     padding: 0 15px
     box-sizing: border-box
@@ -186,17 +179,50 @@ input #search
 		border-collapse: collapse
 		border-spacing: 0
 		width: 100%
-		margin: 20px  0
+		margin: 20px 0 75px
 	.table td, .table th
-		font-size: 14px
+		font-size: 16px
 		padding: 10px
 		border: 1px solid $text-color
+	.table td
+		padding: 1rem
 	.table-title
 		text-align: center
 		background-color: $main-color
 		color: $text-color
-		.title 
-			vertical-align: middle	
+		.title
+			vertical-align: middle
+
+.block-table-2
+	.table
+		.table-title-2
+			text-align: center
+			background-color: $main-color
+			color: $text-color
+			.title-2
+				vertical-align: middle
+		caption
+			font-size: 20px
+			text-align: center
+			caption-side: top !important
+
+.footer
+	min-height: 130px
+	background-color: $main-color
+	.footer-info
+		display: flex
+		flex-direction: column
+		text-align: center
+		padding-top: 35px
+		.footer-title
+			font-size: 22px
+			font-weight: 700
+			margin-bottom: 15px
+		.footer-descr
+			font-size: 16px
+			span
+				font-size: 18px
+				font-weight: 700
 		
 		
 			

@@ -2,7 +2,7 @@
     font-family: "Roboto", sans-serif;
   }
 
-  /* Стилилизуем шапку сайта */
+  /* Стилизуем шапку сайта */
   header {
     position: relative;
     height: 50px;
@@ -20,7 +20,7 @@
     display: none;
   }
 
-  /* Стилилизуем меню */
+  /* Стилизуем меню */
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,7 +51,7 @@
     padding-right: 0;
   }
 
-  /* Стилилизуем подменю */
+  /* Стилизуем подменю */
   .subheader {
     position: absolute;
     top: 30px;
@@ -75,7 +75,7 @@
     font-weight: 700;
   }
 
-  /* Стилилизуем главный экран сайта */
+  /* Стилизуем главный экран сайта */
   .promo {
     position: relative;
     min-height: 600px;
@@ -91,7 +91,7 @@
     min-height: 600px;
   }
 
-  /* Стилилизуем заголовок сайта */
+  /* Стилизуем заголовок сайта */
   .promo_header {
     color: #fff;
     font-size: 40px;
@@ -102,7 +102,7 @@
     padding-top: 150px;
   }
 
-  /* Стилилизуем описание сайта */
+  /* Стилизуем описание сайта */
   .promo_descr {
     color: #fff;
     font-size: 18px;
@@ -111,7 +111,7 @@
     margin-top: 40px;
   }
 
-  /* Стилилизуем содержание сайта */
+  /* Стилизуем содержание сайта */
   .wrapper {
     max-width: 100%;
     min-height: 100%;
@@ -124,7 +124,7 @@
     display: none;
   }
 
-  /* Стилилизуем формы */
+  /* Стилизуем формы */
   .panel {
     position: relative;
     border: none;
@@ -209,7 +209,7 @@
     color: #616976;
   }
 
-  /* Стилилизуем Блок таблицы плановых проверок */
+  /* Стилизуем Блок таблицы плановых проверок */
   .check .check-title {
     font-size: 30px;
     font-weight: 700;
@@ -217,7 +217,7 @@
     margin: 30px 0;
   }
 
-  /* Стилилизуем группу кнопок */
+  /* Стилизуем группу кнопок */
   .block-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -244,7 +244,7 @@
     background-color: #d2d2f9;
   }
 
-  /* Стилилизуем таблицу */
+  /* Стилизуем таблицу */
   .block-table {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -277,7 +277,7 @@
     vertical-align: middle;
   }
 
-  /* Стилилизуем подвал сайта */
+  /* Стилизуем подвал сайта */
   .footer {
     min-height: 130px;
     background-color: #c8c8f5;
